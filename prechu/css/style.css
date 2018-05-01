@@ -1,0 +1,281 @@
+/*@import url(../fonts/SegoeWPLight.ttf);*/
+/*@import url(../fonts/SegoeWPN.ttf);*/
+@font-face {
+    font-family: Segoe WP Light;
+    src: url(../fonts/SegoeWPLight.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Segoe WP N;
+    src: url(../fonts/SegoeWPN.ttf) format("truetype")
+}
+
+
+body,
+a {
+    font-family: "Segoe WP N";
+    color: #6f7173;
+}
+
+a:visited,
+a:hover,
+a:active {
+    color: #6f7173;
+}
+
+.padding-content {
+    padding: 0 114px;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-menu .active {
+    border-bottom: 1px solid #5094f2;
+}
+
+
+
+
+.slider {
+    background-image: url(../img/bgslider.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 490px;
+}
+
+.content-slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.text {
+    color: white;
+}
+
+
+
+/*Первый блок*/
+
+
+.slider-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-label {
+    /*    font-size: 42.35px;*/
+    font-family: "Segoe WP N";
+    color: white;
+    line-height: 1.049;
+}
+
+
+.signin > a {
+    color: #fff;
+}
+
+
+.btn-signin {
+
+    background-color: #5094f2;
+   border-radius: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.zabor > img {
+    position: relative;
+    bottom: -5px;
+}
+
+
+.round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 186px;
+    height: 186px;
+}
+
+.round:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+.round:active {
+    position: relative;
+    top: 2px;
+}
+
+.blue {
+    background-color: #5094f2;
+}
+
+.red {
+    background-color: #d94748;
+}
+
+.yellow {
+    background-color: #ebbb11;
+}
+
+
+
+.c-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-lbl,
+.card-text {
+    font-family: "Segoe WP N";
+}
+
+.c-card > .card-lbl {
+    font-size: 20.35px;
+    color: #5094f2;
+    line-height: 2.183;
+}
+
+.card-text {
+    font-size: 14.35px;
+    color: #909090;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.shop-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*3 блок*/
+.shopping-cart-header {
+    font-size: 42.35px;
+    line-height: 1.049;
+    margin: 20px;
+}
+
+.cart-basket:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+.cart-basket:active {
+    position: relative;
+    top: 2px;
+}
+
+.sb-text {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.footer {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > p {
+    bottom: 50%;
+}
+
+/*Медиа запросы*/
+/* lg-размер (<=1199px) */
+
+@media (max-width: 1199px) {
+    /* CSS для ширины от 992px до 1199px */
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+/* md-размер (<=991px) */
+
+@media (max-width: 991px) {
+    /* CSS для ширины от 768px до 991px */
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    
+    .round {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .padding-content {
+        padding: 0 10px;
+    }
+
+}
+
+/* sm-размер (<=768px) */
+
+@media (max-width: 767px) {
+    /* CSS для ширины от 576px до 767px */
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: .7rem;
+    }
+
+    
+
+    .sbt {
+        text-align: center;
+    }
+
+    .shopping-cart-header {
+        font-size: 2rem;
+    }
+}
+
+/* xs-размер (<=575px) */
+
+@media (max-width: 575px) {
+    /* CSS для ширины до 575px (включительно) */
+    .slider-img {
+        display: none;
+    }
+
+    .signin {
+        display: flex;
+        justify-content: center;
+    }
+
+    .signin .btn-signin {
+        margin-left: 0px;
+    }
+
+    .round {
+        display: none;
+    }
+
+
+}

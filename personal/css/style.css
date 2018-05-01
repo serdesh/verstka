@@ -1,0 +1,511 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "Raleway Medium";
+    src: url(../fonts/Raleway-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "Raleway SemiBold";
+    src: url(../fonts/Raleway-SemiBold.ttf) format("truetype")
+}
+
+body {
+    font-family: "Raleway Medium";
+    color: #3e3e3e;
+}
+
+a > img:hover {
+    position: relative;
+    bottom: 2px;
+}
+
+a > img:active {
+    position: relative;
+    top: 2px;
+}
+
+.padding-site {
+    margin-top: 75px;
+    padding: 0 75px;
+}
+
+.navbar-toggler {
+    display: block !important;
+}
+
+/*Header*/
+
+.header,
+.header-menu {
+    background-color: #353541;
+    padding-top: 50px;
+}
+
+.header {
+    height: 494px;
+    /*    margin-bottom: 75px;*/
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    /*    justify-content: center;*/
+    align-items: center;
+    margin-top: 37px;
+}
+
+.name {
+    width: 100%;
+    font-size: 48px;
+    color: #fff;
+    line-height: 2.027;
+    text-align: center;
+    border-top: 2px solid #fb6470;
+    border-bottom: 2px solid #fb6470;
+}
+
+.profession {
+    font-size: 18px;
+    color: #fff;
+    line-height: 2.027;
+}
+
+.btn-hireme {
+    font-size: 22px;
+    line-height: 1.658;
+    margin: 30px 0;
+    background-color: #fb6470;
+    border-color: #fb6470;
+    padding: 8px 42px;
+}
+
+/*  end Header*/
+
+/*About Me Block*/
+
+.a-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a-me-head,
+work-head {
+    font-family: "Raleway SemiBold";
+}
+
+.red-line {
+    max-width: 75px;
+    height: 2px;
+    background-color: #fb6470;
+    margin: 20px 0 30px;
+}
+
+.a-me-text {
+    line-height: 26px
+}
+
+.a-me-persinfo {
+    line-height: 50px;
+}
+
+.personalphoto {
+    text-align: center;
+}
+
+/*end About Me Block*/
+
+/*start Work/Education-block*/
+
+.work-block,
+.education-block {
+    margin: 0;
+}
+
+.block-left {
+    align-self: flex-end;
+}
+
+.mega-tooltip {
+    background: #353541;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.mt-head {
+    font-family: "Raleway Medium";
+}
+
+.mega-tooltip > p > span {
+    font-family: "Raleway";
+    color: #d35965;
+    text-transform: uppercase;
+}
+
+.mega-tooltip > p {
+    font-family: "Raleway";
+}
+
+.triangle-bottomleft {
+    content: '';
+    position: absolute;
+    /*    Положение треугольника */
+    right: 0px;
+    bottom: 20px;
+
+    border: 25px solid transparent;
+    border-bottom: 20px solid #353541;
+    border-left: 20px solid #353541;
+}
+
+.triangle-topright {
+    content: '';
+    position: absolute;
+    /*    Положение треугольника */
+    left: 0px;
+    top: 20px;
+
+    border: 25px solid transparent;
+    border-top: 20px solid #353541;
+    border-right: 20px solid #353541;
+}
+
+/*start midle-block*/
+
+.midle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+}
+
+.midle-line {
+    height: 95px;
+}
+
+.midle-line,
+.midle {
+    background-image: url(../img/vert_line.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.work-between {
+    padding: 0;
+    margin: 0;
+}
+
+
+.circle-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.circle-inner {
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #fb6470;
+    width: 16px;
+    height: 16px;
+}
+
+/*end midle-block*/
+
+.separator {
+    height: 2px;
+    background-color: #e5e5e5;
+    margin: 80px;
+}
+
+/*end Work/Education-block*/
+
+/*MySkill*/
+
+.myskills {
+    margin-top: 80px;
+    padding-bottom: 65px;
+    background-color: #1d1d24;
+    color: #fff;
+}
+
+.skill-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    0
+}
+
+/*Сбрасыываем input range*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/*Стилизация range*/
+
+/* Special styling for WebKit/Blink */
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #e85662;
+    cursor: pointer;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    margin-top: -5px;
+    /* Add cool effects to your sliders! */
+    /*  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+}
+
+/* All the same stuff for Firefox */
+
+input[type=range]::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #e85662;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+
+input[type=range]::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    background: #e85662;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: #e85662;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #bcbcbe;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: #e85662;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #e85662;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #e85662;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #bcbcbe;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #bcbcbe;
+}
+
+/*конец стилизации range*/
+
+.num-of-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/*end MySkill*/
+
+/*Info*/
+
+.l-msg {
+    font-family: "Raleway Medium";
+    font-size: 22px;
+    line-height: 1.364;
+}
+
+.fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-inputs > input,
+.txt-area > textarea {
+    font-family: "Raleway Medium";
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(62, 62, 62, 0.8);
+}
+
+.info-inputs > input {
+    margin: 12px 0;
+
+}
+
+.txt-area > textarea {
+    width: 100%;
+}
+
+.btnsubmit {
+    justify-content: flex-end;
+    margin-right: 0;
+}
+
+.hire-me-small {
+    font-size: 16px;
+    background-color: #fb6470;
+    border-color: #fb6470;
+    padding: 7px 16px;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.info {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.i-home,
+.i-mail,
+.i-phone {
+    margin-right: 30px;
+}
+
+.i-card {
+    display: flex;
+    align-items: center;
+}
+
+/*End Info*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter,
+.skype,
+.dribbble {
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.twitter {
+    background-image: url(../img/Twitter.png);
+}
+
+.skype {
+    background-image: url(../img/Skype.png);
+}
+
+.dribbble {
+    background-image: url(../img/Dribbble.png);
+}
+
+
+.twitter:hover,
+.skype:hover,
+.dribbble:hover {
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.twitter:hover {
+    background-image: url(../img/Twitter2.png);
+
+}
+
+.skype:hover {
+    background-image: url(../img/Skype2.png);
+
+}
+
+.dribbble:hover {
+    background-image: url(../img/Dribbble2.png);
+
+}
+
+.soc-btn {
+    display: flex;
+    align-items: center;
+}
+
+.soc-btn a {
+    padding: 10px;
+}
+
