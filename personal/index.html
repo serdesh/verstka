@@ -17,17 +17,37 @@
     <div class="container-fluid">
         <div class="row header-menu">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
                 <!--Выпадающее слева меню-->
+                <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                <div class="hidden-menu">
+                    <div class="head-menu">
+                        <h2>Al Rayhan</h2>
+                        <p>Ui/ux Expert</p>
+                    </div>
+                    <ul class="body-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Work Experience</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Potrfolio</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <label class="btn-menu" for="hmt">
+                    <span class="first"></span>
+                    <span class="sp-between"></span>
+                    <span class="second"></span>
+                    <span class="sp-between"></span>
+                    <span class="third"></span>
+                </label>
+
+
             </div>
         </div>
         <div class="row header">
-            <div class="col"></div>
-            <div class="col-md-4 header-text">
+            <div class="col h-1"></div>
+            <div class="col-lg-4 col-md-6 header-text">
                 <div class="name">
                     Al Rayhan
                 </div>
@@ -36,10 +56,10 @@
                 </div>
                 <a href="#" class="btn btn-danger btn-hireme">Hire Me!</a>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2 h-1"></div>
         </div>
         <div class="row about-block padding-site">
-            <div class="col a-me">
+            <div class="col-md-6 a-me">
                 <h2 class="a-me-head">About Me</h2>
                 <div class="red-line"></div>
                 <p class="a-me-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo recusandae labore quibusdam laudantium veritatis iste commodi dolorum ullam, facere rem eum soluta accusamus voluptatem nulla mollitia officiis fugit perspiciatis.</p>
@@ -47,8 +67,8 @@
                     <p><b>Name :</b> Al Rayhan <br> <b>Age :</b> 23 Years <br> <b>Email :</b> mail@deviserweb.com <br> <b>Web :</b> <a href="http://deviserweb.com">deviserweb.com</a> <br> <b>Address :</b> 24, Golden Street, New </p>
                 </div>
             </div>
-            <div class="col personalphoto">
-                <img src="img/personalphoto.jpg" class="img-responsive" alt="Al Rayhan">
+            <div class="col-md-6 personalphoto">
+                <img src="img/personalphoto.jpg" class="img-fluid" alt="Al Rayhan">
             </div>
         </div>
         <div class="row work-block-header padding-site">
@@ -191,77 +211,94 @@
                 <h2 class="myskills-head">My Skills</h2>
                 <div class="red-line"></div>
             </div>
-            <div class="col skill-block">
-                <div class="block1">
-                    <label for="exp">User Experience</label>
-                    <input type="range" class="personal-range" id="exp" value="90">
-                </div>
-                <div class="block2">
-                    <label for="interface">User Interface</label>
-                    <input type="range" class="personal-range" id="interface" value="98">
-                </div>
-                <div class="block3">
-                    <label for="design">Web Design</label>
-                    <input type="range" class="personal-range" id="design" value="70">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col skill-block">
+                                <div class="block1">
+                                    <label for="exp">User Experience</label>
+                                    <input type="range" class="personal-range" id="exp" value="90">
+                                </div>
+                                <div class="block2">
+                                    <label for="interface">User Interface</label>
+                                    <input type="range" class="personal-range" id="interface" value="98">
+                                </div>
+                                <div class="block3">
+                                    <label for="design">Web Design</label>
+                                    <input type="range" class="personal-range" id="design" value="70">
+                                </div>
+                            </div>
+                            <div class="col-2 num-of-skill">
+                                <div class="n-skill-1">90%</div>
+                                <div class="n-skill-2">98%</div>
+                                <div class="n-skill-3">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col skill-block">
+                                <div class="block1">
+                                    <label for="exp">User Experience</label>
+                                    <input type="range" class="personal-range" id="exp" value="90">
+                                </div>
+                                <div class="block2">
+                                    <label for="interface">User Interface</label>
+                                    <input type="range" class="personal-range" id="interface" value="98">
+                                </div>
+                                <div class="block3">
+                                    <label for="design">Web Design</label>
+                                    <input type="range" class="personal-range" id="design" value="70">
+                                </div>
+                            </div>
+                            <div class="col-2 num-of-skill">
+                                <div class="n-skill-1">90%</div>
+                                <div class="n-skill-2">98%</div>
+                                <div class="n-skill-3">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col skill-block">
+                                <div class="block1">
+                                    <label for="exp">User Experience</label>
+                                    <input type="range" class="personal-range" id="exp" value="90">
+                                </div>
+                                <div class="block2">
+                                    <label for="interface">User Interface</label>
+                                    <input type="range" class="personal-range" id="interface" value="98">
+                                </div>
+                                <div class="block3">
+                                    <label for="design">Web Design</label>
+                                    <input type="range" class="personal-range" id="design" value="70">
+                                </div>
+                            </div>
+                            <div class="col-2 num-of-skill">
+                                <div class="n-skill-1">90%</div>
+                                <div class="n-skill-2">98%</div>
+                                <div class="n-skill-3">70%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-1 num-of-skill">
-                <div class="n-skill-1">90%</div>
-                <div class="n-skill-2">98%</div>
-                <div class="n-skill-3">70%</div>
-            </div>
-            <div class="col skill-block">
-                <div class="block1">
-                    <label for="exp">User Experience</label>
-                    <input type="range" class="personal-range" id="exp" value="90">
-                </div>
-                <div class="block2">
-                    <label for="interface">User Interface</label>
-                    <input type="range" class="personal-range" id="interface" value="80">
-                </div>
-                <div class="block3">
-                    <label for="design">Web Design</label>
-                    <input type="range" class="personal-range" id="design" value="96">
-                </div>
-            </div>
-            <div class="col-1 num-of-skill">
-                <div class="n-skill-1">90%</div>
-                <div class="n-skill-2">80%</div>
-                <div class="n-skill-3">96%</div>
-            </div>
-            <div class="col skill-block">
-                <div class="block1">
-                    <label for="communication">Communication</label>
-                    <input type="range" class="personal-range" id="communication" value="90">
-                </div>
-                <div class="block2">
-                    <label for="teamwork">Team Work</label>
-                    <input type="range" class="personal-range" id="teamwork" value="80">
-                </div>
-                <div class="block3">
-                    <label for="dedication">Dedication</label>
-                    <input type="range" class="personal-range" id="dedication" value="73">
-                </div>
-            </div>
-            <div class="col-1 num-of-skill">
-                <div class="n-skill-1">90%</div>
-                <div class="n-skill-2">80%</div>
-                <div class="n-skill-3">73%</div>
-            </div>
+     
         </div>
         <!--/MySkills-->
         <!--Info-->
         <div class="row padding-site">
-            <div class="col msg-form">
+            <div class="col-lg-6 col-sm-12 msg-form">
                 <h3 class="l-msg">Leave a Message</h3>
                 <form action="#" method="POST">
                     <div class="row fields">
-                        <div class="col info-inputs">
+                        <div class="col-md-6 col-sm-12 info-inputs">
                             <input type="name" name="name" placeholder="Name">
                             <input type="email" name="email" placeholder="Email">
                             <input type="text" name="subject" placeholder="Subject">
                         </div>
-                        <div class="col txt-area">
+                        <div class="col-md-6 col-sm-12 txt-area">
                             <textarea name="message" id="message" cols="30" rows="6" placeholder="Message"></textarea>
                         </div>
                     </div>
@@ -271,10 +308,10 @@
 
                 </form>
             </div>
-            <div class="col-1"></div>
-            <div class="col-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-sm-12">
                 <div class="row info">
-                    <div class="col i-card">
+                    <div class="col-md-12 col-sm-6 i-card">
                         <div class="i-home">
                             <img src="img/home.png" alt="Location">
                         </div>
@@ -283,7 +320,7 @@
                             <p>324, Golden Tower, Amborkhana, Sylhet</p>
                         </div>
                     </div>
-                    <div class="col i-card">
+                    <div class="col-md-12 col-sm-6 i-card">
                         <div class="i-mail">
                             <img src="img/mail.png" alt="Email">
                         </div>
@@ -292,7 +329,7 @@
                             <p><a href="mailto:junaed@deviserweb.com">junaed@deviserweb.com</a></p>
                         </div>
                     </div>
-                    <div class="col i-card">
+                    <div class="col-md-12 col-sm-12 i-card">
                         <div class="i-phone">
                             <img src="img/phone.png" alt="Call">
                         </div>
@@ -308,9 +345,15 @@
         <div class="row separator"></div>
         <footer class="row footer">
             <div class="soc-btn">
-               <a href="#"><div class="twitter"></div></a>|
-               <a href="#"><div class="skype"></div></a>|
-               <a href="#"><div class="dribbble"></div></a>
+                <a href="#">
+                    <div class="twitter"></div>
+                </a>|
+                <a href="#">
+                    <div class="skype"></div>
+                </a>|
+                <a href="#">
+                    <div class="dribbble"></div>
+                </a>
             </div>
             <div class="copyright">
                 <p>Copyright: Junaed Ahmed, All rights reserved</p>

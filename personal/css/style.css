@@ -33,9 +33,138 @@ a > img:active {
     padding: 0 75px;
 }
 
+
+
+/*start Menu*/
+
 .navbar-toggler {
     display: block !important;
 }
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 275px;
+    background-color: #eee;
+    height: 100%;
+    top: 0;
+    left: -275px;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    background-color: #353541;
+}
+
+.head-menu {
+    height: 220px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*    align-items: center;*/
+    padding-left: 40px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353541+0,2f3b4b+51,23242c+100 */
+    background: #353541;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #353541 0%, #2f3b4b 51%, #23242c 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #353541 0%, #2f3b4b 51%, #23242c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #353541 0%, #2f3b4b 51%, #23242c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353541', endColorstr='#23242c', GradientType=0);
+    /* IE6-9 */
+}
+
+.body-menu {
+    list-style: none;
+
+}
+
+.body-menu > li > a {
+    font-family: "Raleway Medium";
+    font-size: 22px;
+    line-height: 62px;
+    color: #fff;
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+
+.btn-menu {
+    width: 55px;
+    height: 5px;
+    color: red;
+    background-color: transparent;
+    padding: 5px;
+    margin-left: 85px;
+    top: 40px;
+    left: 85px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.btn-menu span {
+    display: block;
+    height: 5px;
+    background-color: #fb6470;
+    /*    margin: 5px 0 0;*/
+    /*    transition: all .1s linear .23s;*/
+    position: relative;
+}
+
+.btn-menu > .sp-between {
+    display: block;
+    height: 5px;
+    /*    background-color: #353541;*/
+    background-color: transparent;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+
+/*Магия*/
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+    left: 45px;
+    position: fixed;
+    margin-left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: scale(.5) rotate(-45deg);
+    top: 10px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.sp-between {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: scale(.5) rotate(45deg);
+    top: -10px;
+}
+
+/*end Menu*/
 
 /*Header*/
 
@@ -114,7 +243,8 @@ work-head {
 }
 
 .personalphoto {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /*end About Me Block*/
@@ -244,7 +374,6 @@ work-head {
 /*MySkill*/
 
 .myskills {
-    margin-top: 80px;
     padding-bottom: 65px;
     background-color: #1d1d24;
     color: #fff;
@@ -255,7 +384,7 @@ work-head {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    0
+    padding-right: 0;
 }
 
 /*Сбрасыываем input range*/
@@ -433,7 +562,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .info {
     height: 100%;
-    flex-direction: column;
+    /*    flex-direction: column;*/
     justify-content: space-between;
 }
 
@@ -509,3 +638,44 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 10px;
 }
 
+/*Media*/
+
+@media (max-width: 1199px) {
+    /* CSS для ширины от 992px до 1199px */
+    .padding-site {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* CSS для ширины от 768px до 991px */
+    .h1 {
+        display: none;
+    }
+    .triangle-topright,
+    .triangle-bottomleft,
+    .midle,
+    .midle-line {
+        display: none;
+    }
+    .mega-tooltip {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    /* CSS для ширины от 576px до 767px */
+    .btn-menu {
+        margin-left: 0;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+    /* CSS для ширины до 575px (включительно) */
+}
+
+/*end Media*/
