@@ -1,0 +1,727 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot');
+    src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('fonts/fontawesome-webfont.woff') format('woff'),
+        url('fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('fonts/fontawesome-webfont.svg#fontAwesome') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('fonts/LatoBold.eot');
+    src: url('fonts/LatoBold.eot') format('embedded-opentype'),
+        url('fonts/LatoBold.woff2') format('woff2'),
+        url('fonts/LatoBold.woff') format('woff'),
+        url('fonts/LatoBold.ttf') format('truetype'),
+        url('fonts/LatoBold.svg#LatoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('fonts/LatoRegular.eot');
+    src: url('fonts/LatoRegular.eot') format('embedded-opentype'),
+        url('fonts/LatoRegular.woff2') format('woff2'),
+        url('fonts/LatoRegular.woff') format('woff'),
+        url('fonts/LatoRegular.ttf') format('truetype'),
+        url('fonts/LatoRegular.svg#LatoRegular') format('svg');
+}
+
+/*==================== Базовые настройки ====================== */
+
+@header-color: #2d3950;
+@text-color: #999999;
+@bg-color-light: #f6f9f9;
+@white-text: #ffffff;
+@blue: #15a4fa;
+
+.lato-bold {
+    font-family: "LatoBold", sans-serif;
+    font-weight: 700;
+}
+
+.lato-regular {
+    font-family: "LatoRegular", sans-serif;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+    /* =10px */
+}
+
+
+body {
+
+    .lato-regular;
+    font-size: 1.4rem;
+    /* =14px */
+}
+
+h1 {
+    font-size: 2.4rem;
+    /* =24px */
+}
+
+a {
+    text-decoration: none;
+    color: @text-color;
+
+    &:hover {
+        text-decoration: none;
+        color: @header-color;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    columns: @header-color;
+}
+
+p {
+    color: @text-color;
+}
+
+.container-fluid {
+    max-width: 160rem;
+    padding: 0;
+}
+
+//.feedback .container {
+//    border: 2px solid green;
+//}
+
+//
+//.third .container-fluid {
+//    border: 2px solid red;
+//}
+
+/*==================== Первый экран ====================== */
+.head-bg {
+    background-color: @bg-color-light;
+}
+
+.logo {
+
+    display: flex;
+
+    a {
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+        height: 10rem;
+
+        h3 {
+            .lato-bold;
+            font-size: 3rem;
+            margin-left: 2rem;
+            text-transform: uppercase;
+            color: @header-color;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-block {
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .row {
+            height: 100%;
+        }
+
+        h1,
+        p,
+        a {
+            color: @white-text;
+        }
+
+        h1 {
+            padding: 0 9rem;
+
+            border-bottom: 2px solid @blue;
+            .lato-bold;
+            font-size: 12rem;
+            text-transform: uppercase;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin-bottom: 6.5rem;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5rem;
+
+            a {
+                border: 1px solid @blue;
+                background-color: @blue;
+                padding: 2rem 3rem;
+                font-size: 2rem;
+            }
+        }
+
+        .arrow-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            align-items: flex-end;
+        }
+
+        .arrow {
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+    }
+}
+
+/*==================== Секция 1 ====================== */
+.first {
+
+    &-container {
+        padding: 8rem 0;
+        background-color: @bg-color-light;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 4rem;
+            color: @header-color;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+/*==================== Секция 2 (карточки) ====================== */
+.cards {
+
+    padding: 6.5rem 0;
+
+    .card {
+        border: none;
+
+        &-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            //            background-color: blue;
+            .fa {
+                position: absolute;
+                color: @white-text;
+            }
+        }
+
+        img {
+            width: 10rem;
+            margin: 0 auto;
+
+        }
+
+        &-body {
+            text-align: center;
+
+            h5 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}
+
+/*==================== Секция 3 (галерея) ====================== */
+.third {
+
+    &-container {
+        background-color: @bg-color-light;
+        padding-bottom: 12rem;
+    }
+
+    &-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem 0;
+
+        h2 {
+            font-size: 4rem;
+
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .third-card {
+        position: relative;
+        margin-bottom: 2.5rem;
+
+        &:hover .hover {
+            opacity: 1;
+            z-index: 100;
+        }
+
+        .hover {
+            transition: 1s;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            background-color: rgba(33, 161, 241, 0.9);
+
+            .fa {
+                color: @white-text;
+            }
+
+            a {
+                padding: 1.2rem 1.5rem;
+                margin: 0 0.5rem;
+                border: 1px solid @white-text;
+                border-radius: 0.2rem;
+                background-color: @blue;
+
+            }
+        }
+    }
+
+}
+
+/*==================== Обратная связь ====================== */
+.feedback {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .feedback-container {
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8.4rem 0;
+
+            h2 {
+                font-size: 4rem;
+                color: @white-text;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            form {
+                color: @white-text;
+                font-size: 1.5rem;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+
+                input,
+                textarea {
+                    width: 100%;
+                    margin: 2rem 0;
+                    padding: 2.5rem 2rem;
+                    background-color: transparent;
+                    color: @white-text;
+                    outline: none;
+                }
+
+                textarea {
+                    height: 16rem;
+
+                    &::-webkit-input-placeholder {
+                        color: @white-text;
+                    }
+
+                    &::-moz-placeholder {
+                        color: @white-text;
+                    }
+
+                    /* Firefox 19+ */
+                    &:-moz-placeholder {
+                        color: @white-text;
+                    }
+
+                    /* Firefox 18- */
+                    &:-ms-input-placeholder {
+                        color: @white-text;
+                    }
+                }
+
+
+                input {
+
+                    &::-webkit-input-placeholder {
+                        color: @white-text;
+                    }
+
+                    &::-moz-placeholder {
+                        color: @white-text;
+                    }
+
+                    /* Firefox 19+ */
+                    &:-moz-placeholder {
+                        color: @white-text;
+                    }
+
+                    /* Firefox 18- */
+                    &:-ms-input-placeholder {
+                        color: @white-text;
+                    }
+                }
+
+                .feedback-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .feedback-check {
+                        width: 50%;
+
+                        input {
+                            width: 10%;
+                        }
+                    }
+
+                    .btn {
+                        font-size: 1.8rem;
+                        padding: 1rem 5rem;
+                        background-color: @blue;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*==================== Подвал ====================== */
+footer {
+    .footer-container {
+
+        background-color: @bg-color-light;
+
+        .footer-copyright {
+            display: flex;
+            align-items: center;
+
+            h4 {
+                font-size: 1.5rem;
+                color: @text-color;
+            }
+        }
+
+        .soc-btn {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                margin: 0 1rem;
+            }
+
+            .bg-soc(@color) {
+                width: 4rem;
+                height: 4rem;
+                background-color: @color;
+                color: @white-text;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2.5rem 0.5rem;
+            }
+
+            .facebook {
+                .bg-soc(#3b5998);
+            }
+
+            .twitter {
+                .bg-soc(#55acee);
+            }
+
+            .google {
+                .bg-soc(#dd4b39);
+            }
+
+            .linkedin {
+                .bg-soc(#0976b4);
+            }
+        }
+    }
+
+}
+
+/*==================== Адаптив ====================== */
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .head {
+        display: none;
+    }
+
+    .first-container,
+    .cards,
+    .third-head,
+    .third-container {
+        padding: 1rem 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3rem !important;
+    }
+
+    .feedback .feedback-container {
+        width: 100%;
+    }
+
+    .feedback .feedback-container .feedback-form form .feedback-footer {
+        flex-direction: column;
+    }
+
+    .feedback .feedback-container .feedback-form form .feedback-footer .feedback-check {
+        width: 100%;
+    }
+
+    footer .footer-container .footer-copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .head {
+        display: none;
+    }
+
+    .first-container,
+    .cards,
+    .third-head,
+    .third-container {
+        padding: 2rem 0;
+    }
+
+    .first-content h2 {
+        text-align: center;
+    }
+
+    .third-head h2 {
+        font-size: 2rem;
+    }
+
+    .feedback .feedback-container {
+        width: 100%;
+    }
+
+    .feedback .feedback-container .feedback-form form .feedback-footer .feedback-check {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feedback .feedback-container .feedback-form {
+        margin: 4.5rem 0;
+    }
+
+    .feedback-footer {
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+            font-size: 1.5rem;
+            padding: 0.2rem 2rem;
+        }
+    }
+
+    footer .footer-container .soc-btn {
+        justify-content: center;
+    }
+
+    footer .footer-container .footer-copyright {
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .head-block-content {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .first-container {
+        padding: 3rem 0;
+    }
+
+    .cards {
+        padding: 1.5rem 0;
+
+        .card {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+
+    .third-container {
+        .third-head {
+            padding: 3rem 0;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+        }
+
+        .row {
+
+            .col-md-4 {
+                width: inherit;
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+    .feedback .feedback-container {
+        width: 100%;
+    }
+
+    footer .footer-container .footer-copyright {
+        display: block;
+        text-align: center;
+    }
+
+    footer .footer-container .soc-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .head-block {
+        padding: 0;
+
+        &-content {
+            h1 {
+                font-size: 7rem;
+            }
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-size: 3rem;
+                margin-bottom: 4rem;
+            }
+
+        }
+
+
+    }
+
+    .feedback .feedback-container {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .feedback {
+        .feedback-container {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .head-block-content {
+        margin-top: 10rem;
+    }
+
+    .feedback {
+        .feedback-container {
+            width: 40%;
+        }
+    }
+}
+
+
+
+/*==================== Базовые настройки ====================== */
+
+/*==================== Базовые настройки ====================== */
