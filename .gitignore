@@ -2,5 +2,5 @@
 *.bat
 source/*
 app/*
-node_modules/*
+node_modules/
 gulpfile.js
