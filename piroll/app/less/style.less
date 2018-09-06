@@ -10,12 +10,12 @@ html  {
 @white-text: #ffffff;
 
 .fontMontserat{
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 }
 
 .fontNunito{
-	font-family: 'Nunito';
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -43,6 +43,11 @@ a, a:hover {
 
 }
 
+.container-fluid {
+	max-width: 136.6rem;
+	background-color: @bg-gray;
+}
+
 .content-margin{
 	margin-left: 10rem;
 	margin-right: 10rem;
@@ -56,7 +61,7 @@ a, a:hover {
 
 //================================== Шапка =============================
 .header{
-	background-color: @bg-gray;
+	// background-color: @bg-gray;
 
 	&-top {
 		padding-top: 3.8rem;
@@ -80,7 +85,6 @@ a, a:hover {
 	}
 
 	.header-content {
-
 		display: flex;
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -92,21 +96,31 @@ a, a:hover {
 		margin-top: 18rem;
 		margin-bottom: 20rem;
 		
+		h1 {
+			font-size: 3rem;
+			font-weight: 600;
+		}
 		p {
+			font-size: 1.8rem;
 			margin-top: 3.2rem;
 			margin-bottom: 3.9rem;
+			.fontNunito;
 		}
 
-		.h-btn {
-			background-color: @color-not-gray;
-			padding: 2.2rem 4.6rem;
-			.fontMontserat;
+		// .h-btn {
+			// background-color: @color-not-gray;
+			// padding: 2.2rem 4.6rem;
+			
 
 			a {
+				padding: 2.2rem 4.6rem;
+				background-color: @color-not-gray;
+				font-size: 1.2rem;
 				color: @white-text;
 				text-transform: uppercase;
+				.fontMontserat;
 			}
-		}
+		// }
 	}
 }
 
