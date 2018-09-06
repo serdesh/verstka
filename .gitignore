@@ -2,6 +2,7 @@
 *.bat
 source/
 app/
+!app/less/
 node_modules/
 gulpfile.js
 package-lock.json
