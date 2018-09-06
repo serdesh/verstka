@@ -11,7 +11,7 @@ html  {
 
 .fontMontserat{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .fontNunito{
@@ -48,6 +48,8 @@ a, a:hover {
 	background-color: @bg-gray;
 }
 
+.container
+
 .content-margin{
 	margin-left: 10rem;
 	margin-right: 10rem;
@@ -65,7 +67,7 @@ a, a:hover {
 
 	&-top {
 		padding-top: 3.8rem;
-		.content-margin;
+		// .content-margin;
 	}
 
 	&-menu {
@@ -140,6 +142,10 @@ a, a:hover {
 		-ms-align-items: center;
 		align-items: center;	
 		width: 50%;
+		
+		h1 {
+			font-size: 3rem;
+		}
 
 		p {
 			margin-top: 4.1rem;
@@ -155,10 +161,15 @@ a, a:hover {
 	&-content {
 		margin: 16.4rem 8.5rem 16.4rem 10rem;
 
+		h2 {
+			font-size: 3rem;
+		}
+
 		.i-label {
 			margin-top: 4rem;
 			margin-bottom: 2rem;
 			.fontMontserat;
+			font-size: 1.2rem;
 			text-transform: uppercase;
 			color: @color-gray-hard;
 		}
