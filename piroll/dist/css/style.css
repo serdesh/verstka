@@ -34,9 +34,17 @@ a:hover {
   text-decoration: none;
   color: #787878;
 }
+input,
+input:active,
+textarea {
+  outline: none;
+}
 .container .content-margin {
   margin-left: 10rem;
   margin-right: 10rem;
+}
+header {
+  background-color: #e9e9e9;
 }
 .header-top {
   padding-top: 3.8rem;
@@ -47,14 +55,15 @@ a:hover {
   list-style: none;
 }
 .header-menu li {
-  margin-left: 1rem;
+  margin-left: 3rem;
   text-transform: uppercase;
 }
 .header-menu li a {
   color: #1d1d1d;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
   font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .header .header-content {
   display: flex;
@@ -260,36 +269,25 @@ a:hover {
   border-radius: 50%;
 }
 .carousel-inner {
-  height: 30rem;
-}
-.carousel-inner .carousel-item {
-  display: flex;
-  justify-content: center;
-  height: inherit;
   background-color: #10c9c3;
 }
-.carousel-inner .carousel-item .slide {
-  height: inherit;
-  color: #ffffff;
-  display: -webkit-flex !important;
-  display: -moz-flex !important;
-  display: -ms-flex !important;
-  display: -o-flex !important;
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
+.carousel-inner .carousel-item {
   text-align: center;
-  max-width: 80rem;
-  margin: 18rem 0;
 }
-.carousel-inner .carousel-item .slide h4 {
-  font-size: 2rem;
+.carousel-inner .d-block {
+  margin: 15rem auto;
+  max-width: 80rem;
+}
+.carousel-inner h4,
+.carousel-inner p {
   color: #ffffff;
 }
-.carousel-inner .carousel-item .slide p {
+.carousel-inner h4 {
+  font-size: 2.4rem;
+}
+.carousel-inner p {
   margin-top: 3.5rem;
+  text-transform: uppercase;
   font-size: 1.2rem;
 }
 .emblems {
@@ -340,15 +338,31 @@ a:hover {
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
+  width: 100%;
+  padding: 0 12rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: inherit;
+  font-size: 1.5rem;
+  padding: 1.8rem 0 1.8rem 2rem;
+  border: none;
 }
 .contact-form .user-info {
-  width: 100%;
+  width: inherit;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: space-around;
+}
+.contact-form .user-info .name {
+  width: inherit;
+  margin-right: 3rem;
+}
+.contact-form .user-info .email {
+  width: inherit;
 }
 .contact-form .message {
   width: 100%;
@@ -366,7 +380,33 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.contact-form .message input,
-.contact-form .message textarea {
-  width: 100%;
+.contact-form .message input {
+  margin: 3rem 0;
+}
+.contact-form button {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 2.3rem 3.5rem;
+  border: none;
+  background-color: #10c9c3;
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.footer {
+  background-color: #141414;
+  color: #bcbcbc;
+  font-size: 1.5rem;
+}
+.footer a {
+  color: #bcbcbc;
+}
+.footer-container {
+  padding: 10rem 0;
+}
+.footer-container h4 {
+  color: #ffffff;
+  margin-bottom: 2.7rem;
+  font-size: 1.8rem;
 }
