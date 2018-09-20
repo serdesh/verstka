@@ -1,0 +1,20 @@
+Для работы Bower необходим установленный Git.
+Установка bower: npm i -g bower
+
+Чтобы установить все пакеты и зависимости, выполните команду npm i в папке проекта.
+
+Пример установки jQuery и Magnific Popup:
+bower i jquery magnific-popup
+
+
+Структура проекта
+-app
+--css
+--fonts
+--img
+--js
+--less
+--libs
+--index.html
+-dist
+
